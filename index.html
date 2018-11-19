@@ -1,9 +1,11 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>Obscura</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="icono_magtimus/style.css">
+    <link rel="stylesheet" href="css/superslides.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Hotel Frifaire</title>
 <link rel="stylesheet" type="text/css" media="all" href="style.css" />
 <link rel="stylesheet" type="text/css" href="style/css/media-queries.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700' rel="stylesheet" type='text/css'>
@@ -29,110 +31,62 @@
 <script type="text/javascript" src="style/js/jquery.dcflickr.1.0.js"></script>
 <script type="text/javascript" src="style/js/twitter.min.js"></script>
 <script type="text/javascript">
-	$.backstretch("style/images/bg/1.jpg");
+    $.backstretch("style/images/bg/1.jpg");
 </script>
 </head>
-<body>
-    
- 
 <div class="scanlines"></div>
 
 <!-- Begin Header -->
 <div class="header-wrapper opacity">
-	<div class="header">
-		<img src="style/images/art/hotelfrifaire1.png" alt=""/>
-		<!-- Begin Menu -->
-		<div id="menu-wrapper">
-			<div id="menu" class="menu">
-				<ul id="tiny">
-					<li class="active"><a href="index.html">Inicio</a>
-						<ul>
-							<li><a href="post.html">Alojamientos</a></li>
-						</ul>
-					</li>
-					<li><a href="page-with-sidebar.html">Beneficios</a>
-						<ul>
-							<li><a href="page-with-sidebar.html">Page With Sidebar</a></li>
-							<li><a href="full-width.html">Full Width</a></li>
-						</ul>
-					</li>
+    <div class="header">
+        <img src="style/images/art/hotelfrifaire1.png" alt=""/>
+        <!-- Begin Menu -->
+        <div id="menu-wrapper">
+            <div id="menu" class="menu">
+                <ul id="tiny">
+                    <li class="active"><a href="index.html">Inicio</a>
+                        <ul>
+                            <li><a href="post.html">Alojamientos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page-with-sidebar.html">Beneficios</a>
+                        <ul>
+                            <li><a href="page-with-sidebar.html">Page With Sidebar</a></li>
+                            <li><a href="full-width.html">Full Width</a></li>
+                        </ul>
+                    </li>
                                         <li><a href="login.php">Registrate</a>
                                         </li>
                                                 
-					
-					</li>
-					<li><a href="contactos.html">Contactanos</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="clear"></div>
-		<!-- End Menu -->
-	</div>
+                    
+                    </li>
+                    <li><a href="contactos.html">Contactanos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!-- End Menu -->
+    </div>
 </div>
 <!-- End Header -->
-
-<!-- Begin Wrapper -->
-<div class="intro">Tu mejor opcion para tu hotel ideal</div>
-
-<!-- Begin Blog Grid -->
-	<div class="slideshow">
-		<ul class="slider">
-<li>
-                            <img src="style/images/art/post4.jpg" alt=""/>
-                            <section class="caption">
-				</section>
-			</li>
-<li>
-                                <img src="style/images/art/post1.jpg" alt=""/>
-				<section class="caption">
-				</section>
-			</li>
-<li>
-                            <img src="style/images/art/post2.jpg" alt=""/>
-				<section class="caption">
-				</section>
-			</li>
-<li>
-                            <img src="style/images/art/post3.jpg" alt=""/>
-                            <section class="caption">
-			</section>
-			</li>
-<li>
-                             <img src="style/images/art/post5.jpg" alt=""/>
-                            <section class="caption">
-				</section>
-			</li>
-<li>
-                             <img src="style/images/art/post6.jpg" alt=""/>
-                            <section class="caption">
-				</section>
-			</li>
-<li>
-                             <img src="style/images/art/post7.jpg" alt=""/>
-                            <section class="caption">
-				</section>
-			</li>                        
-		</ul>
-
-		<ol class="pagination">
-			
-		</ol>
-	
-		<div class="left">
-			<span class="fa fa-chevron-left"></span>
-		</div>
-
-		<div class="right">
-			<span class="fa fa-chevron-right"></span>
-		</div>
-
-	</div>
-   
-<head>
- 
-
-
-<br><br><br><br>
+<body>
+    <div id="slides">
+        <ul class="slides-container">
+            <li><img src="style/images/art/post1.jpg" alt=""/></li>
+            <li><img src="style/images/art/post2.jpg" alt=""/></li>
+            <li><img src="style/images/art/post3.jpg" alt=""/></li>
+            <li><img src="style/images/art/post4.jpg" alt=""/></li>
+        </ul>
+        
+      <nav class="slides-navigation">
+            <a href="#" class="next icon-chevron-thin-right"></a>
+            <a href="#" class="prev icon-chevron-thin-left"></a>
+      </nav>
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.superslides.js"></script>
+</body>
 
 <h1><div class="intro">
 Seas como seas, busques lo que busques, tenemos el lugar perfecto para vos. Entre nuestros 10 unidades de alojamiento, lugares únicos, ubicados en diferentes territorios. hotelfrifaire.com tiene sede en Temuco.</div></h1>
@@ -145,4 +99,5 @@ Seas como seas, busques lo que busques, tenemos el lugar perfecto para vos. Entr
 </body>
 
 
+</html>
 </html>
