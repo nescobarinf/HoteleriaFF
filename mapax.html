@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Hotel Frifaier l</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" type="text/css" href="style/css/media-queries.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700' rel="stylesheet" type='text/css'>
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+<![endif]-->
+<script src="...path-to-files.../L.Control.Window.js"></script>
+     <link rel="stylesheet" href="...path-to-file.../L.Control.Window.css" />
+<script type="text/javascript" src="style/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/retina.js"></script>
+<script type="text/javascript" src="style/js/selectnav.js"></script>
+<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="style/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.dcflickr.1.0.js"></script>
+<script type="text/javascript" src="style/js/twitter.min.js"></script>
+<script type="text/javascript">
+    
+    $.backstretch("style/images/bg/1.jpg");
+</script>
+</head>
+<body>
+<div class="scanlines"></div>
+
+<!-- Begin Header -->
+<div class="header-wrapper opacity">
+    <div class="header">
+        <img src="style/images/art/hotelfrifaire1.png" alt=""/>
+        <!-- Begin Menu -->
+        <div id="menu-wrapper">
+            <div id="menu" class="menu">
+                <ul id="tiny">
+                    <li class="active"><a href="index.html">Inicio</a>
+                        <ul>
+                            <li><a href="post.html">Alojamientos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page-with-sidebar.html">Beneficios</a>
+                        <ul>
+                            <li><a href="page-with-sidebar.html">Page With Sidebar</a></li>
+                            <li><a href="full-width.html">Full Width</a></li>
+                        </ul>
+                    </li>
+                                        <li><a href="login.php">Registrate</a>
+                                        </li>
+                                                
+                    
+                    </li>
+                    <li><a href="contactos.html">Contactanos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!-- End Menu -->
+    </div>
+</div>
+<!-- End Header -->
+
+<!-- Begin Wrapper -->
+<div class="intro">Tu mejor opcion para tu hotel ideal</div>
+
+<!-- Begin Blog Grid -->
+
+
+<br>
+<br>
+<br>
+<br>
+<center><head>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+    <style>
+          #map { 
+    width: 1000px;
+    height: 500px;
+    box-shadow: 5px 5px 5px #888;
+          }
+    </style>
+</head>
+    <body>
+        <div id = 'map'>
+        </div>
+            
+            
+<script>
+
+    // 1 declaramos el mapa
+    var map = L.map('map').
+    setView( [41.4780103, 2.3043663],
+     12);
+
+     // 2. declaramos el repositorio de mapas... el tile layer
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>',
+    maxZoom: 20
+    }).addTo(map);
+
+    // aÃ±adimos control de escala  
+    L.control.scale().addTo(map);
+
+
+    var marker = L.marker([-38.699779006536744,-72.54667282104492],{draggable: false}).addTo(map);  
+        
+    var marker = L.marker([-38.73503795776671,-72.58838653564453],{draggable: false}).addTo(map);  
+    
+    var marker = L.marker([-38.53927056445533,-72.43125200271606],{draggable: false}).addTo(map);
+    
+    var marker = L.marker([-39.27093585292606,-71.99911594390869],{draggable: false}).addTo(map); 
+    
+    var marker = L.marker([-39.288608474199414,-72.19991683959961],{draggable: false}).addTo(map);  
+
+    var marker = L.marker([-38.82232349606106,-73.3970832824707],{draggable: false}).addTo(map);  
+
+    var marker = L.marker([-38.926330799778334,-72.02816963195801],{draggable: false}).addTo(map);  
+
+    var marker = L.marker([-38.77255472236722,-72.74991989135742],{draggable: false}).addTo(map);  //labranza
+
+    var marker = L.marker([-38.260423749766026,-72.68056869506836],{draggable: false}).addTo(map);  // Traiguen
+
+    var marker = L.marker([-38.926330799778334,-72.02816963195801],{draggable: false}).addTo(map);  
+
+    var marker = L.marker([-38.926330799778334,-72.02816963195801],{draggable: false}).addTo(map);  
+
+    var marker = L.marker([-38.926330799778334,-72.02816963195801],{draggable: false}).addTo(map);  
+
+    marker.bindPopup("<b>Hotel Frifaire en Temuco</b><br>$50.000").openPopup();
+    
+   
+
+    
+
+
+
+
+</script></center>
+
+<br>
+<br>
+<br>
+
+<h1><div class="intro">
+Seas como seas, busques lo que busques, tenemos el lugar perfecto para vos. Entre nuestros 10 unidades de alojamiento, lugares únicos, ubicados en diferentes territorios. hotelfrifaire.com tiene sede en Temuco.</div></h1>
+
+<div class="site-generator-wrapper">
+    <center><div class="site-generator">Hotel Frifaire  <a href="index.html"></a>Copyright © 2018 Frifaire.com™. Todos los derechos reservados.</div>
+</div></center>
+<!-- End Footer --> 
+<script type="text/javascript" src="style/js/scripts.js"></script>
+</body>
+
+
+</html>
