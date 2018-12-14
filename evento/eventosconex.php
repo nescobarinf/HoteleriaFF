@@ -14,7 +14,7 @@
             echo '<script> alert ("Hemos recibido su reserva con exito, nos contactaremos con usted por telefono o a traves de email.")</script>';
             echo "<script>location.href='eventos.html'</script>";        
         }else{ 
-            echo '<script> alert ("Porfavor ingrese una fecha valida")';
-            echo "<script>location.href='eventos.html'</script>"; 
+            echo '<script> alert ("Porfavor ingrese una fecha valida")</script>';
+            echo "<script>location.href='eventos.html'</script>";  
             }
 ?>
