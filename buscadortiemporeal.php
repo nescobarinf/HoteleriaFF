@@ -1,10 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es-ES">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<title>Contactos</title>
-	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>Buscar</title>
+    <link rel="stylesheet" type="text/css" href="style/css/estilo.css"> 
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style/css/media-queries.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700' rel="stylesheet" type='text/css'>
 	<script type="text/javascript" src="style/js/jquery-1.7.2.min.js"></script>
@@ -15,13 +16,12 @@
 	<script type="text/javascript" src="style/js/jquery.fitvids.js"></script>
 	<script type="text/javascript" src="style/js/jquery.backstretch.min.js"></script>
 	<script type="text/javascript" src="style/js/jquery.dcflickr.1.0.js"></script>
-	<script type="text/javascript" src="style/js/twitter.min.js"></script>
 	<script type="text/javascript">
 	$.backstretch("style/images/bg/1.jpg");
 </script>
 </head>
 <body>
-<div class="scanlines"></div>
+    <div class="scanlines"></div>
 
 <!-- inicio de cabecera -->
 <div class="header-wrapper opacity">
@@ -33,9 +33,10 @@
 			</a>
 	    </div>
 		<!-- fin de logo -->
-		<!-- inicio de menu -->
+		<!-- inicio de Menu -->
 		<div id="menu-wrapper">
 			<div id="menu" class="menu">
+				<div id="menu" class="menu">
 				<ul id="tiny">
                     <li class="active"><a href="index.html">Inicio</a>
                         <ul>
@@ -50,41 +51,37 @@
                     <li><a href="contact.html">Contacto</a></li>
                 </ul>
 			</div>
+			</div>
 		</div>
 		<div class="clear"></div>
 		<!-- fin de menu -->
 	</div>
 </div>
-<!-- fin de cabecera -->
-
+<!-- fin cabecera -->
 <!-- inicio de envoltura -->
 <div class="wrapper"><!-- inicio de intro -->
-<div class="intro">Contactate con nostros, a traves de esta pagina, estamos abierto a cualquier reclamo o sugerencia.</div>
+<div class="intro">Escribe el tipo de habitacion que quieras, (Bronce, Plata, Oro, Premium) o filtra por precio.</div>
 
 
 <!-- inicio de caja -->
 <div class="content box">
 
-	<h1 class="title">Nosotros somos</h1>
-	<p> Somos una empresa que esta iniciando en la industria de la hoteleria y turismo</p>
+
+<section class="principal">
+
+	<h1>BUSCA TU HABITACIÓN</h1>
+
+	<div class="formulario">
+		<label for="caja_busqueda">Buscar</label>
+		<input type="text" name="caja_busqueda" id="caja_busqueda"></input>
+
 		
-<h3>Deja un comentario de nosotros</h3>
-<p>Ingresa tu nombre, un correo valido para responder a ti, tu motivo para contactarnos, y el mensaje que nos quieres dejar.</p>
+	</div>
 
-	<form class="forms" action="contactoconex.php" method="post">
-		
-			
-				<label>Nombre</label><input type="text" name="nombre"/> 
-				<label>Email</label><input type="text" name="email"/> 
-				<label>Asunto</label><input type="text" name="asunto"/> 
-				<p><label>Comentario</label><input type="text" name="comentario"/></p>
-				<p><input type="submit" value="Enviar" name="submit" class="btn-submit" /></p>
-			
-	</form>
-
-
-
-
+	<div id="datos"></div>
+	
+	
+</section>
 </div>
 <!-- fin de caja -->
 
@@ -102,7 +99,7 @@
 	</div>
 	
 	<div class="sidebox widget">
-		<h3 class="widget-title">Ingresa tus datos y responderemos lo más pronto posible</h3>
+		<h3 class="widget-title">Recuerda que 0 es disponible y 1 es ocupado ;) </h3>
 		<p>Dato curioso: Esta pagina esta realizada por estudiantes de la Universidad Catolica de Temuco.</p>
 	</div>
 	
@@ -120,5 +117,8 @@
 </div>
 <!-- fin de pie --> 
 <script type="text/javascript" src="style/js/scripts.js"></script>
+<script type="text/javascript" src="style/js/buscador/jquery.min.js"></script>
+<script type="text/javascript" src="style/js/buscador/main.js"></script>
 </body>
+
 </html>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<title>Contactos</title>
+	<title>Evento</title>
 	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="style/css/media-queries.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700' rel="stylesheet" type='text/css'>
@@ -59,25 +59,24 @@
 
 <!-- inicio de envoltura -->
 <div class="wrapper"><!-- inicio de intro -->
-<div class="intro">Contactate con nostros, a traves de esta pagina, estamos abierto a cualquier reclamo o sugerencia.</div>
+<div class="intro">Reserva tu evento aquí, nosotros nos pondremos en contacto contigo.</div>
 
 
 <!-- inicio de caja -->
 <div class="content box">
 
-	<h1 class="title">Nosotros somos</h1>
-	<p> Somos una empresa que esta iniciando en la industria de la hoteleria y turismo</p>
-		
-<h3>Deja un comentario de nosotros</h3>
-<p>Ingresa tu nombre, un correo valido para responder a ti, tu motivo para contactarnos, y el mensaje que nos quieres dejar.</p>
+	<h1 class="title">Te contactaremos para darte la hora de reserva</h1>
 
-	<form class="forms" action="contactoconex.php" method="post">
+		
+<p>Rellena los campos correspondientes para reservar tu evento (obligatorio *)</p>
+
+	<form class="forms" action="eventosconex.php" method="post">
 		
 			
-				<label>Nombre</label><input type="text" name="nombre"/> 
-				<label>Email</label><input type="text" name="email"/> 
-				<label>Asunto</label><input type="text" name="asunto"/> 
-				<p><label>Comentario</label><input type="text" name="comentario"/></p>
+				<label>Fecha del Evento (*)</label><input type="date" name="fechaevento"/> 
+				<label>N° de Personas (*)</label><input type="text" name="numpersonas"/> 
+				<label>Telefono (*)</label><input type="text" name="telefono"/> 
+				<p><label>Email (*)</label><input type="text" name="email"/></p>
 				<p><input type="submit" value="Enviar" name="submit" class="btn-submit" /></p>
 			
 	</form>
@@ -102,8 +101,8 @@
 	</div>
 	
 	<div class="sidebox widget">
-		<h3 class="widget-title">Ingresa tus datos y responderemos lo más pronto posible</h3>
-		<p>Dato curioso: Esta pagina esta realizada por estudiantes de la Universidad Catolica de Temuco.</p>
+		<h3 class="widget-title">Ingresa tus datos de reservación de evento y responderemos lo más pronto posible</h3>
+		<p>Dato curioso: Esta pagina esta realizada por estudiantes de la Universidad Catolica de Temuco, por eso es tan mala xd</p>
 	</div>
 	
 </div>
