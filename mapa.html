@@ -80,7 +80,7 @@
             L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
                 
-                maxZoom: 7
+                maxZoom: 9
                 
             }).addTo(map);
             
@@ -105,7 +105,7 @@
 
             //changing the content on mouseover
             marker_third.on('mouseOver', function(){
-                marker_third._popup.setContent("Villarrica - Valentin Letelier - 593."+ '<a href="https://www.w3schools.com/html/html_links.asp">prueba</a>"')
+                marker_third._popup.setContent("Villarrica - Valentin Letelier - 593.")
             });
             
             var marker_fourt = L.marker([-37.80126052080611,-72.6998832821846,]).bindPopup("Nuestro Hotel de Angol,</br> presenta como ubicación turistica</br>el Regimiento Infanteria Blindada Húsares y el Estado Municipal de Angol cual encontraras en nuestras cercanias.</br>"+ '<a href="file:///C:/xampp/htdocs/HotelFF/files/template/hotelangol.html" target="_blank">Angol  - Bilbao  - 110.</a>"').addTo(map);
@@ -115,8 +115,40 @@
             marker_fourt.on('mouseOver', function(){
                 marker_fourt._popup.setContent("Angol  - Bilbao  - 110.")
             });
+            
+            
+             var marker_five = L.marker([-39.239365, -72.085125,]).bindPopup("Visite el Lago Villarica en su estancia con nosotros</br>"+ '<a href="file:///C:/xampp/htdocs/HotelFF/files/template/parque1.html" target="_blank">Lago Villarrica Región de la Araucanía</a>"').addTo(map);
+            marker_fourt.openPopup();
+
+            //changing the content on mouseover
+            marker_fourt.on('mouseOver', function(){
+                marker_fourt._popup.setContent("Lago.")
+            });
              
-                            
+             var marker_five = L.marker([-39.168349, -71.725551,]).bindPopup("Visite el Parque Nacional Huerquehue en su estancia con nosotros</br>"+ '<a href="file:///C:/xampp/htdocs/HotelFF/files/template/parque2.html" target="_blank">Pucón Parque Nacional Huerquehue</a>"').addTo(map);
+            marker_fourt.openPopup();
+
+            //changing the content on mouseover
+            marker_fourt.on('mouseOver', function(){
+                marker_fourt._popup.setContent("Parque Pucon.")
+            });
+            
+            var marker_five = L.marker([-38.724037, -72.588598,]).bindPopup("Visite el Parque Nacional Huerquehue en su estancia con nosotros</br>"+ '<a href="file:///C:/xampp/htdocs/HotelFF/files/template/parque3.html" target="_blank">Temuco Monumento Natural Cerro Ñielol</a>"').addTo(map);
+            marker_fourt.openPopup();
+
+            //changing the content on mouseover
+            marker_fourt.on('mouseOver', function(){
+                marker_fourt._popup.setContent("Cerro.")
+            });
+            
+            var marker_five = L.marker([-37.844951, -72.730612,]).bindPopup("Visite el Parque Nacional Huerquehue en su estancia con nosotros</br>"+ '<a href="file:///C:/xampp/htdocs/HotelFF/files/template/parque4.html" target="_blank">Angol Canteras De Deuco Estero Deuco</a>"').addTo(map);
+            marker_fourt.openPopup();
+
+            //changing the content on mouseover
+            marker_fourt.on('mouseOver', function(){
+                marker_fourt._popup.setContent("Cerro.")
+            });
+            
         </script>
             
 		</div>
