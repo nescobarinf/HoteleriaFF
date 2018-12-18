@@ -1,0 +1,169 @@
+<!DOCTYPE html> 
+ 
+<html> 
+     
+<head> 
+     
+    <meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> 
+	<title>Evento</title> 
+	<link rel="stylesheet" type="text/css" media="all" href="style.css" /> 
+	<link rel="stylesheet" type="text/css" href="style/css/media-queries.css" /> 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700' rel="stylesheet" type='text/css'> 
+	<script type="text/javascript" src="style/js/jquery-1.7.2.min.js"></script> 
+	<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script> 
+	<script type="text/javascript" src="style/js/retina.js"></script> 
+	<script type="text/javascript" src="style/js/selectnav.js"></script> 
+	<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script> 
+	<script type="text/javascript" src="style/js/jquery.fitvids.js"></script> 
+	<script type="text/javascript" src="style/js/jquery.backstretch.min.js"></script> 
+	<script type="text/javascript" src="style/js/jquery.dcflickr.1.0.js"></script> 
+	<script type="text/javascript" src="style/js/twitter.min.js"></script> 
+	<script type="text/javascript"> 
+	$.backstretch("style/images/bg/1.jpg"); 
+    </script> 
+     
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script> 
+     
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" /> 
+     
+	<style> 
+        
+        #map {  
+            width: 100%; 
+            height: 580px; 
+            box-shadow: 5px 5px 5px #888; 
+        } 
+    </style> 
+ 
+     
+</head> 
+     
+	<body> 
+        <div class="scanlines"></div> 
+ 
+<div class="header-wrapper opacity"> 
+    <div class="header"> 
+        <div id="menu-wrapper"> 
+            <div id="menu" class="menu"> 
+                <ul id="tiny"> 
+                    <li><a href="index.html">Inicio</a> 
+                         
+                    </li> 
+                    <li class="active"><a href="registro.html">Registro</a> 
+                        <ul> 
+                            <li><a href="registro.html">Registrar Habitacion</a></li> 
+                        </ul> 
+                    </li> 
+                    <li><a href="typography.html">Styles</a> 
+                        <ul> 
+                            <li><a href="typography.html">Typography</a></li> 
+                            <li><a href="columns.html">Columns</a></li> 
+                        </ul> 
+                    </li> 
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul> 
+            </div> 
+        </div> 
+        <div class="clear"></div> 
+    </div> 
+</div> 
+		<div id = "map"> 
+         
+        <script> 
+             
+            var map = L.map('map'). 
+             
+            setView([-38.738944084562284,-72.61827439069748,], 
+            15); 
+             
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>', 
+                 
+                maxZoom: 9 
+                 
+            }).addTo(map); 
+             
+            var marker_first = L.marker([-38.738944084562284,-72.61827439069748,]).bindPopup("Nuestro Hotel de Temuco,</br> cuenta con una ubicación turistica</br> en la cual encontraran en nuestras cercanias</br> el Estadio German Becker, </br> el Casino Dreamsy el Portal Temuco.</br> "+ '<a href="file:///C:/xampp/htdocs/TALLERINTEGRACIONFINAL/mapacontinuacion/Temuco.html" target="_blank" >Temuco - Bernardo OHiggins - 1140.</a>"').addTo(map); 
+            marker_first.openPopup(); 
+ 
+            //changing the content on mouseover 
+            marker_first.on('mouseOver', function(){ 
+                marker_first._popup.setContent("Temuco - Bernardo O'Higgins - 1140.") 
+            }); 
+             
+            var marker_second = L.marker([-39.273441, -71.977108,]).bindPopup("Nuestro Hotel de Pucón,</br> cuenta con una ubicación turistica</br> en la cual encontraran en nuestras cercanias</br>la Península de Pucón</br>además de encontrar un camino directo hacia el río.</br> "+ '<a href="file:///C:/xampp/htdocs/TALLERINTEGRACIONFINAL/mapacontinuacion/pucon.html" target ="_blank">Pucón  - Pedro de Valdivia - 333.</a>"').addTo(map); 
+            marker_second.openPopup();  
+ 
+            //changing the content on mouseover 
+            marker_second.on('mouseOver', function(){ 
+                marker_second._popup.setContent("Pucón  - Pedro de Valdivia - 333.") 
+            }); 
+             
+            var marker_third = L.marker([-39.28088140332334,-72.22654849290848,]).bindPopup("Nuestro Hotel de Villarrica,</br> cuenta con una ubicación turistica</br> en la cual encontraran en nuestras cercanias</br>una calle turistica</br>en la cual encontraran diversas tiendas, de comida, artesania, etc.</br> "+'<a href="file:///C:/xampp/htdocs/TALLERINTEGRACIONFINAL/mapacontinuacion/Villarrica.html" target="_blank">Villarrica - Valentin Letelier - 593.</a>"').addTo(map); 
+            marker_third.openPopup(); 
+ 
+            //changing the content on mouseover 
+            marker_third.on('mouseOver', function(){ 
+                marker_third._popup.setContent("Villarrica - Valentin Letelier - 593.") 
+            }); 
+             
+            var marker_fourt = L.marker([-37.80126052080611,-72.6998832821846,]).bindPopup("Nuestro Hotel de Angol,</br> presenta como ubicación turistica</br>el Regimiento Infanteria Blindada Húsares y el Estado Municipal de Angol cual encontraras en nuestras cercanias.</br>"+ '<a href="file:///C:/xampp/htdocs/TALLERINTEGRACIONFINAL/mapacontinuacion/hotelangol.html" target="_blank">Angol  - Bilbao  - 110.</a>"').addTo(map); 
+            marker_fourt.openPopup(); 
+ 
+            //changing the content on mouseover 
+            marker_fourt.on('mouseOver', function(){ 
+                marker_fourt._popup.setContent("Angol  - Bilbao  - 110.") 
+            }); 
+             
+             
+             var marker_five = L.marker([-39.239365, -72.085125,]).bindPopup("Visite el Lago Villarica en su estancia con nosotros</br>"+ '<a href="file:///C:/xampp/htdocs/TALLERINTEGRACIONFINAL/mapacontinuacion/parque1.html" target="_blank">Lago Villarrica Región de la Araucanía</a>"').addTo(map); 
+            marker_fourt.openPopup(); 
+ 
+            //changing the content on mouseover 
+            marker_fourt.on('mouseOver', function(){ 
+                marker_fourt._popup.setContent("Lago.") 
+            }); 
+              
+             var marker_five = L.marker([-39.168349, -71.725551,]).bindPopup("Visite el Parque Nacional Huerquehue en su estancia con nosotros</br>"+ '<a href="file:///C:/xampp/htdocs/TALLERINTEGRACIONFINAL/mapacontinuacion/parque2.html" target="_blank">Pucón Parque Nacional Huerquehue</a>"').addTo(map); 
+            marker_fourt.openPopup(); 
+ 
+            //changing the content on mouseover 
+            marker_fourt.on('mouseOver', function(){ 
+                marker_fourt._popup.setContent("Parque Pucon.") 
+            }); 
+             
+            var marker_five = L.marker([-38.724037, -72.588598,]).bindPopup("Visite el Parque Nacional Huerquehue en su estancia con nosotros</br>"+ '<a href="file:///C:/xampp/htdocs/TALLERINTEGRACIONFINAL/mapacontinuacion/parque3.html" target="_blank">Temuco Monumento Natural Cerro Ñielol</a>"').addTo(map); 
+            marker_fourt.openPopup(); 
+ 
+            //changing the content on mouseover 
+            marker_fourt.on('mouseOver', function(){ 
+                marker_fourt._popup.setContent("Cerro.") 
+            }); 
+             
+            var marker_five = L.marker([-37.844951, -72.730612,]).bindPopup("Visite el Parque Nacional Huerquehue en su estancia con nosotros</br>"+ '<a href="file:///C:/xampp/htdocs/TALLERINTEGRACIONFINAL/mapacontinuacion/parque4.html" target="_blank">Angol Canteras De Deuco Estero Deuco</a>"').addTo(map); 
+            marker_fourt.openPopup(); 
+ 
+            //changing the content on mouseover 
+            marker_fourt.on('mouseOver', function(){ 
+                marker_fourt._popup.setContent("Cerro.") 
+            }); 
+             
+        </script> 
+             
+		</div> 
+        </br> 
+         
+        </br> 
+ 
+        <div class="site-generator-wrapper"> 
+	       <div class="site-generator">Copyright Hoteleria Frifaier. Todos los derechos reservados.</div> 
+        </div> 
+         
+	</body> 
+     
+</html> 
+ 
+ 
+ 
+ 

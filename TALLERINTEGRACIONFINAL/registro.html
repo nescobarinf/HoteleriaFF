@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Registro</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" type="text/css" href="style/css/media-queries.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700' rel="stylesheet" type='text/css'>
+<script type="text/javascript" src="style/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/retina.js"></script>
+<script type="text/javascript" src="style/js/selectnav.js"></script>
+<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="style/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+	$.backstretch("style/images/bg/1.jpg");
+</script>
+</head>
+<body>
+<div class="scanlines"></div>
+
+<div class="header-wrapper opacity">
+	<div class="header">
+		<div id="menu-wrapper">
+			<div id="menu" class="menu">
+				<ul id="tiny">
+					<li><a href="index.html">Inicio</a>
+						
+					</li>
+					<li class="active"><a href="registro.html">Registro</a>
+						<ul>
+							<li><a href="registro.html">Registrar Habitacion</a></li>
+						</ul>
+					</li>
+					<li><a href="typography.html">Styles</a>
+						<ul>
+							<li><a href="typography.html">Typography</a></li>
+							<li><a href="columns.html">Columns</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="wrapper">
+<div class="intro">Bienvenido a la etapa de registro de habitacion. Por favor elija las opciones que mas le acomoden para completar su estancia en nuestro hotel. </div>
+<div class="content box">
+	<table>
+	<h3>(*)Elija donde desea quedarse</h3>
+	<form action="guardarhabitacion.php" method="post" id="form">
+	  <select name="lugar" id="lugar">
+	    <option value="Temuco">Temuco</option>
+	    <option value="Villarica">Villarica</option>
+	    <option value="Pucon">Pucon</option>
+	    <option value="Angol">Angol</option>
+	  </select>
+	  <br><br><br>
+	  <h3>(*)Elija el tipo de habitacion</h3>
+		  <select name="habitacion" id="habitacion">
+			<option value="1">Premium - con cama extra grande-$400.000</option>
+		    <option value="2">Premium - con doble cama extra grande-$450.000</option>
+		    <option value="4">Oro - con cama extra grande-$100.000</option>
+		    <option value="5">Oro - dos camas extra grande-$120.000</option>
+		    <option value="6">Oro - tres camas extra grande-$150.000</option>
+		    <option value="7">Plata - cama normal-$55.000</option>
+		    <option value="8">Plata - dos camas grandes-$80.000</option>
+		    <option value="9">Plata - dos camas normales-$65.000</option>
+		    <option value="10">Bronce - cama normal-$30.000</option>
+		    <option value="11">Bronce - dos camas normales-$35.000</option>
+		    <option value="12">Bronce - tres camas normales-$45.000</option>
+		  </select><br><br><br>
+		<h3>(*)Cantidad de personas</h3>
+				<select name="personas" id="personas">
+					<option value="1 persona">1 persona</option>
+					<option value="2 persona">2 personas</option>
+					<option value="3 o mas personas">3 o mas personas</option>
+				</select>
+			<br><br><br>
+		<h3>(*)¿ En que dia llega ?</h3>
+		<input type="date" name="llegada"id="llegada">
+		<h3>(*)En que dia se va?</h3>
+		<input type="date" name="salida" id="salida">
+	  	<br><br>
+	  <br><br><br>
+	  <input type="submit" value="Registrar habitacion">
+	  <br>
+</form>
+</table>
+<br>
+</div>
+</tr>
+<div class="sidebar box">
+  <div class="sidebox widget">
+			<h3 class="widget-title">Nuestras redes sociales</h3>
+			<ul class="post-list">
+			  	<li> 
+			  		<div class="frame">
+			  			<a href="#"><img src="style/images/fb.png"style="width:67px;height:67px;" /></a>
+			  		</div>
+					<div class="meta">
+					    <h6><a href="#">Facebook</a></h6>
+					    <em>@HotelFrifaier</em>
+				    </div>
+				</li>
+				<li> 
+			  		<div class="frame">
+			  			<a href="#"><img src="style/images/tw.png"style="width:67px;height:67px;" /></a>
+			  		</div>
+					<div class="meta">
+					    <h6><a href="#">Twitter</a></h6>
+					    <em>@Hotel</em>
+				    </div>
+				</li>
+				<li> 
+			  		<div class="frame">
+			  			<a href="#"><img src="style/images/ig.png" style="width:67px;height:67px;" /></a>
+			  		</div>
+					<div class="meta">
+					    <h6><a href="#">Instagram</a></h6>
+					    <em>@Hotel</em>
+				    </div>
+				</li>
+			</ul>
+			
+	</div>
+	
+	
+	<div class="sidebox widget">
+		<h3 class="widget-title">Ayuda</h3>
+		<div>Las casillas con un (*) son obligatorias, en la parte final puede elegir una, varias o ninguna. </div>
+	</div>
+	<br>
+	</div>
+	<br><br>
+<div class="clear"></div>
+
+</div>
+<div class="footer-wrapper">
+
+<div class="site-generator-wrapper">
+	<div class="site-generator">Copyright Hoteleria Frifaier. Todos los derechos reservados.</div>
+</div>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+</body>
+</html>
