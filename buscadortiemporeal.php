@@ -38,11 +38,7 @@
 			<div id="menu" class="menu">
 				<div id="menu" class="menu">
 				<ul id="tiny">
-                    <li class="active"><a href="index.html">Inicio</a>
-                        <ul>
-                            <li><a href="post.html">Alojamientos</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="index.html">Inicio</a> </li>
                     <li><a href="mapa.html">Mapa</a></li>
                     <li><a href="registrarusuario.html">Registrate</a></li>
                     <li><a href="registro.html">Reserva tu Habitación</a></li>
